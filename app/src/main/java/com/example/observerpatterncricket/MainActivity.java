@@ -10,7 +10,6 @@ import com.example.observerpatterncricket.withodp.Observer;
 import com.example.observerpatterncricket.withodp.Subject;
 import com.example.observerpatterncricket.withoutodp.ObserveOne;
 import com.example.observerpatterncricket.withoutodp.ObserveTwo;
-import com.example.observerpatterncricket.withoutodp.Score;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         //Without Observer design pattern
         ObserveOne observeOne = new ObserveOne();
         ObserveTwo observeTwo = new ObserveTwo();
-        Score  score = new Score(observeOne,observeTwo);
+        com.example.observerpatterncricket.withoutodp.Subject score = new com.example.observerpatterncricket.withoutodp.Subject(observeOne,observeTwo);
         score.updateObserves(100);
 
         //With Observer design pattern

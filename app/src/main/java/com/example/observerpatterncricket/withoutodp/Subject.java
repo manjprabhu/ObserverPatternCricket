@@ -1,13 +1,13 @@
 package com.example.observerpatterncricket.withoutodp;
 
-public class Score {
+public class Subject {
 
     private int run = 10;
 
     private ObserveOne observeOne;
     private ObserveTwo observeTwo;
 
-    public Score(ObserveOne one, ObserveTwo two) {
+    public Subject(ObserveOne one, ObserveTwo two) {
         this.observeOne = one;
         this.observeTwo = two;
     }
